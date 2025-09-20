@@ -1,6 +1,5 @@
 import "dotenv/config";
 import { z } from "zod";
-import { th } from "zod/v4/locales";
 
 const envSchema = z.object({
   NODE_ENV: z.enum(["development", "production", "test"]).default("production"),
